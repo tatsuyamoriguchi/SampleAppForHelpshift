@@ -23,6 +23,7 @@
 		8CFFF0E32DDF9A6900F8CE7E /* HelpshiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFFF0E22DDF9A6900F8CE7E /* HelpshiftView.swift */; };
 		8CFFF0E42DDF9A6900F8CE7E /* HelpshiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFFF0E22DDF9A6900F8CE7E /* HelpshiftView.swift */; };
 		8CFFF0E52DDF9A6900F8CE7E /* HelpshiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFFF0E22DDF9A6900F8CE7E /* HelpshiftView.swift */; };
+		8CFFF0E82DDFA14000F8CE7E /* HelpshiftX in Frameworks */ = {isa = PBXBuildFile; productRef = 8CFFF0E72DDFA14000F8CE7E /* HelpshiftX */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CFFF0E82DDFA14000F8CE7E /* HelpshiftX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +160,9 @@
 			dependencies = (
 			);
 			name = SampleAppForHelpshift;
+			packageProductDependencies = (
+				8CFFF0E72DDFA14000F8CE7E /* HelpshiftX */,
+			);
 			productName = SampleAppForHelpshift;
 			productReference = 8CFFF0AD2DDF917B00F8CE7E /* SampleAppForHelpshift.app */;
 			productType = "com.apple.product-type.application";
@@ -230,6 +235,9 @@
 				Base,
 			);
 			mainGroup = 8CFFF0A42DDF917B00F8CE7E;
+			packageReferences = (
+				8CFFF0E62DDFA14000F8CE7E /* XCRemoteSwiftPackageReference "HelpshiftX" */,
+			);
 			productRefGroup = 8CFFF0AE2DDF917B00F8CE7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -612,6 +620,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8CFFF0E62DDFA14000F8CE7E /* XCRemoteSwiftPackageReference "HelpshiftX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/helpshift/HelpshiftX";
+			requirement = {
+				kind = exactVersion;
+				version = 10.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8CFFF0E72DDFA14000F8CE7E /* HelpshiftX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CFFF0E62DDFA14000F8CE7E /* XCRemoteSwiftPackageReference "HelpshiftX" */;
+			productName = HelpshiftX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8CFFF0A52DDF917B00F8CE7E /* Project object */;
 }

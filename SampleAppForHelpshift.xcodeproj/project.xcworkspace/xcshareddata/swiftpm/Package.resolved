@@ -1,0 +1,15 @@
+{
+  "originHash" : "170dd560a1b4217aae4aeee5730596f94bdcd7a1a7bc99cfbbd64f4323b31e63",
+  "pins" : [
+    {
+      "identity" : "helpshiftx",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/helpshift/HelpshiftX",
+      "state" : {
+        "revision" : "4052367f15683106e5635cf017fcc7460d6e9898",
+        "version" : "10.4.1"
+      }
+    }
+  ],
+  "version" : 3
+}
