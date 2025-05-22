@@ -15,14 +15,23 @@ struct ContentView: View {
                 .tabItem {
                     Label("Dashboard", systemImage: "house.fill" )
                 }
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(Color.white, for: .tabBar)
+
             EditView()
                 .tabItem {
                     Label("Edit", systemImage: "pencil")
                 }
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(Color.white, for: .tabBar)
+
             HelpshiftView()
                 .tabItem { 
                     Label("Help", systemImage: "questionmark.circle")
                 }
+                .toolbarBackground(.visible, for: .tabBar)
+                .toolbarBackground(Color.white, for: .tabBar)
+
         }
     }
 }

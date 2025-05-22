@@ -15,6 +15,10 @@ struct DashboardView: View {
                 .foregroundStyle(.tint)
             Text("Dashboard View")
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity) // Fill the screen
+        .background(Color.red)
+        .ignoresSafeArea() // Extend into safe areas
+
 
     }
 }
